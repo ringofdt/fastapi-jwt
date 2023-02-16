@@ -20,10 +20,19 @@ Check out the [post](https://testdriven.io/blog/fastapi-jwt-auth/).
     (venv)$ pip install -r requirements.txt
     ```
 
+1. set ENV:
+
+    ```sh
+    # setup .env
+    touch .env
+    echo "secret=secret-shhh" >> .env
+    echo "algorithm=HS256" >> .env
+    ```
+
 1. Run the app:
 
     ```sh
     (venv)$ python main.py
     ```
 
-1. Test at [http://localhost:8081/docs](http://localhost:8081/docs)
+1. Test at [http://localhost:5051/docs](http://localhost:5051/docs)
